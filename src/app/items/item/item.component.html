@@ -1,0 +1,27 @@
+<div>
+  <H1>{{item.firstName}}</H1>
+  <ul>
+    <li appHighlight>
+      {{item.firstName}} {{item.lastName}}
+    </li>
+    <li>
+      {{item.id}}
+    </li>
+    <li>
+      <a [href]='item.email | domainOnly'>
+      {{item.email | domainOnly}}
+    </a>
+    </li>
+    <span [ngSwitch]="item.gender">
+      <p *ngSwitchCase="'Male'">
+        MALE
+      </p>
+      <p *ngSwitchCase="'Female'">
+        FEMALE
+      </p>
+      <p *ngSwitchDefault>
+        INTERSEX
+      </p>
+    </span>
+  </ul>
+</div>
