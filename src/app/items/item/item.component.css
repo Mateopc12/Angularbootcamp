@@ -5,3 +5,11 @@ div {
     background-color: rgba(220, 207, 207, 0.2);
     border-radius: 10px; /* 5px rounded corners */
 }
+
+img {
+    max-width: 200px;
+}
+
+.align-X {
+    text-align: right;
+}
